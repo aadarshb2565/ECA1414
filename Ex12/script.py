@@ -1,10 +1,10 @@
 import serial
 import time
 
-print("Opening COM3...")
+print("Opening ttyUSB0...")
 
 esp32 = serial.Serial(
-    port="/dev/ttyACM0",
+    port="/dev/ttyUSB0",
     baudrate=115200,
     timeout=1,
     dsrdtr=False,
